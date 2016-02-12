@@ -14,7 +14,7 @@ import { testDirective } from '../app/patterns/testDirective';
 
 import * as testOtherDirective from '../app/patterns/testOtherDirective';
 
-import { testOtherDirective2 } from '../app/patterns/testOtherDirective2';
+import * as testOtherDirective2 from '../app/patterns/testOtherDirective2';
 
 declare var malarkey: any;
 declare var moment: moment.MomentStatic;
@@ -42,9 +42,8 @@ angular.module('waltg', [
   .directive('acmeNavbar', acmeNavbar)
   .directive('acmeMalarkey', acmeMalarkey)
 
-
   // Only to get to YES
-  .directive('testOtherDirective2', testOtherDirective2)
+  .directive('testOtherDirective2', testOtherDirective2.waltg.testOtherDirective2)
 
   // YES
   .directive('testDirective', testDirective);
