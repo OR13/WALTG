@@ -1,4 +1,6 @@
 {
+  "buildOnSave": false,
+  "compileOnSave": false,
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs"
